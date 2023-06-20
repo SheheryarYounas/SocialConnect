@@ -18,3 +18,4 @@ Now, add index.js. This is the entry point of the application.
 Path package is native (comes with Node already). It is used to resolve file paths.
 Add "start": "nodemon index.js" in package.json under "scripts". This will allow us to run the application using npm start.
 Use git reset if you added wrong files to staging area (git add .).
+Use .gitignore to hide .env file.
