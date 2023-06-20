@@ -1,0 +1,20 @@
+Install nodemon as it automatically restarts Node.js application when a change in code is detected.
+Install express.js as it is used for the backend or server-side of the application. It provides tools for creating RESTful APIs and is used for routing.
+Install body-parser as it is used to parse incoming request bodies in a middleware before the handlers, available under the req.body property.
+Install mongoose as it is used to connect to MongoDB database and for performing CRUD operations.
+Install cors (Cross-Origin Resource Sharing) as it is a middleware for Express.js for allowing controlled access to resources located outside the server.
+Install dotenv as it is used to load environment variables from a .env file into process.env.
+Install bcryptjs as it is used to hash passwords before storing them in the database.
+Install jsonwebtoken as it is used to generate JWTs (JSON Web Tokens) which are used for authorization and information exchange between client and server.
+Install gridfs-stream as it is used to store and retrieve files from MongoDB database.
+Install multer as it is used for handling file uploads in Express.
+Install multer-gridfs-storage as it is used to store uploaded files in MongoDB database.
+Install helmet as it is used to set HTTP headers for securing the application.
+Install morgan as it is used for logging HTTP requests.
+Then, run command npm init -y to initialize the project with default settings. This will create a package.json file in the project root directory.
+In package.json, under "main", add "type": "module" to enable ES6 modules.
+Line 15 is preference. This means I can use import instead of require.
+Now, add index.js. This is the entry point of the application.
+Path package is native (comes with Node already). It is used to resolve file paths.
+Add "start": "nodemon index.js" in package.json under "scripts". This will allow us to run the application using npm start.
+Use git reset if you added wrong files to staging area (git add .).
