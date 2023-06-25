@@ -9,6 +9,8 @@ import morgan from 'morgan';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { register } from './controllers/auth.js';
+import authRoutes from './routes/auth.js';
+import userRoutes from './routes/users.js';
 
 //Middleware configurations
 const __filename = fileURLToPath(import.meta.url);
@@ -48,7 +50,13 @@ mongoose.connect(process.env.MONGO_URL, {
 .catch((error) => console.log(`${error} did not connect`));
 
 //File routes
-app.post('/auth/register', upload.single('image'), register);
+app.post('/auth/register', upload.single('image'), register); //This route is not in route file as we need to use the upload variable. We need to set it in the index.js file.
+
+//Routes
+app.use('/auth', authRoutes)
+app.use('/users', userRoutes)
+
+
 
 
 
