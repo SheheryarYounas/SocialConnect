@@ -19,3 +19,23 @@ Path package is native (comes with Node already). It is used to resolve file pat
 Add "start": "nodemon index.js" in package.json under "scripts". This will allow us to run the application using npm start.
 Use git reset if you added wrong files to staging area (git add .).
 Use .gitignore to hide .env file.
+We will use data folder to add dummy data.
+-----------------Frontend-----------------
+Use command npx create-react-app client to create React application.
+Install react-redux, @reduxjs/toolkit, redux-persist, react-dropzone, dotenv, formik, yup, react-router-dom@6, @mui/material, @emotion/react, @emotion/styled, @mui/icons-material
+Redux is a state management library. It is used to manage the state of the application.
+Redux Toolkit is the official, opinionated, batteries-included toolset for efficient Redux development.
+Redux Persist is used when we want to persist the state of the application in the browser's local storage.
+React Dropzone is used for drag and drop file uploads.
+Dotenv is used to load environment variables from a .env file into process.env.
+Formik is used for building forms in React.
+Yup is used for form validation.
+React Router is used for routing in React.
+Place two images in public folder presumably for logos. We will use this in frontend.
+Delete the unnecessary files in src folder. Delete the imports and comments as well.
+Now import from google fonts the Rubik font. Select 400, 500, and 700 weights.
+On right side, click on @import and then copy everything between the style tags.
+Paste it in index.css file. Set the properties globally as included in index.css file.
+Add jsconfig.json file in the root directory. This will allow us to use absolute imports which means we can import files without using relative paths.
+Setup index.js in state.
+Set it up in index.js file in src folder.

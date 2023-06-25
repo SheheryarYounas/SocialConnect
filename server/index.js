@@ -14,6 +14,9 @@ import userRoutes from './routes/users.js';
 import { createPost } from './controllers/posts.js';
 import { verifyToken } from './middleware/auth.js';
 import postRoutes from './routes/posts.js';
+import User from './models/user.js';
+import Post from './models/post.js';
+import { users, posts } from './data/index.js';
 
 //Middleware configurations
 const __filename = fileURLToPath(import.meta.url);
@@ -49,6 +52,11 @@ mongoose.connect(process.env.MONGO_URL, {
 })
 .then(() => {
     app.listen(PORT, () => console.log(`Server running on port: ${PORT}`))
+
+    // //Populate database with dummy data but since there is a chance of duplicates being added, we will only run this once
+    // User.insertMany(users)
+    // Post.insertMany(posts)
+    
 })
 .catch((error) => console.log(`${error} did not connect`));
 
