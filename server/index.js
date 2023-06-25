@@ -13,6 +13,7 @@ import authRoutes from './routes/auth.js';
 import userRoutes from './routes/users.js';
 import { createPost } from './controllers/posts.js';
 import { verifyToken } from './middleware/auth.js';
+import postRoutes from './routes/posts.js';
 
 //Middleware configurations
 const __filename = fileURLToPath(import.meta.url);
