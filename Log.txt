@@ -39,3 +39,8 @@ Paste it in index.css file. Set the properties globally as included in index.css
 Add jsconfig.json file in the root directory. This will allow us to use absolute imports which means we can import files without using relative paths.
 Setup index.js in state.
 Set it up in index.js file in src folder.
+Set up theme.js file in src folder.
+Set up App.js file in src folder for theme settings.
+Now create FlexBetween.jsx file in components folder. Set it up.
+Now we create navbar.
+After setting up navbar, go to homePage index.jsx and add it in there to test.

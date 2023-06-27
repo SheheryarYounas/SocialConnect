@@ -1,4 +1,4 @@
-{ //Import from src folder. Make things easier.
+{ 
     "compilerOptions": {
         "baseUrl": "src"
     },
